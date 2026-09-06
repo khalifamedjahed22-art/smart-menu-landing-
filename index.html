@@ -22,6 +22,38 @@
     .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;counter-reset:step}.step{position:relative;text-align:center;padding:25px 20px}.step:before{counter-increment:step;content:counter(step);display:grid;place-items:center;width:45px;height:45px;margin:0 auto 16px;border-radius:50%;background:rgba(255,138,61,.14);color:var(--orange2);font-size:18px;font-weight:900;border:1px solid rgba(255,138,61,.35)}.step h3{font-size:17px;margin-bottom:8px}.step p{color:var(--muted);font-size:13px}
     .faq-grid{max-width:800px;margin:auto;display:grid;gap:10px}.faq{border:1px solid var(--line);border-radius:14px;background:rgba(255,255,255,.035);overflow:hidden}.faq button{width:100%;display:flex;align-items:center;justify-content:space-between;background:none;color:#fff;padding:17px 20px;text-align:right;font-weight:800}.faq button i{color:var(--orange2);transition:.2s}.faq.open button i{transform:rotate(180deg)}.faq p{display:none;color:var(--muted);font-size:13px;padding:0 20px 18px}.faq.open p{display:block}
     .cta{padding:30px 0 95px}.cta-box{border-radius:28px;padding:55px 30px;text-align:center;background:linear-gradient(135deg,#123d54,#154c4c 55%,#493421);border:1px solid rgba(255,255,255,.13);box-shadow:var(--shadow)}.cta-box h2{font-size:clamp(27px,4vw,42px);margin-bottom:12px}.cta-box p{color:#c3d4df;margin-bottom:25px}.footer{border-top:1px solid var(--line);padding:25px 0;color:var(--muted);font-size:12px}.footer-inner{display:flex;justify-content:space-between;gap:20px;align-items:center}.socials{display:flex;gap:12px}.socials a:hover{color:var(--orange2)}.reveal{opacity:0;transform:translateY(18px);transition:.7s}.reveal.visible{opacity:1;transform:none}.toast{position:fixed;bottom:22px;left:22px;z-index:50;background:#112b3b;color:#fff;border:1px solid rgba(255,255,255,.15);border-radius:13px;padding:13px 17px;box-shadow:var(--shadow);transform:translateY(100px);opacity:0;transition:.3s;font-size:13px}.toast.show{transform:none;opacity:1}
+    /* طبقة الوضع النهاري: تباين واضح ومريح للقراءة على الهاتف */
+    body.light{background:radial-gradient(circle at 85% 8%,rgba(32,198,181,.10),transparent 24rem),radial-gradient(circle at 10% 30%,rgba(255,138,61,.08),transparent 28rem),var(--bg);color:var(--text)}
+    body.light .nav{background:rgba(255,255,255,.86);border-bottom-color:rgba(15,23,42,.12)}
+    body.light .nav-links{color:#52647a}
+    body.light .nav-links a:hover{color:#0f172a}
+    body.light .theme-btn,body.light .menu-btn{background:#eaf0f6;color:#102033}
+    body.light .btn-ghost{background:#fff;color:#122033;border-color:#d5dee8;box-shadow:0 5px 18px rgba(15,23,42,.05)}
+    body.light .btn-ghost:hover{background:#f1f5f9;border-color:#b9c8d8}
+    body.light .hero p,body.light .trust,body.light .section-head p,body.light .feature p,body.light .price-card p,body.light .step p,body.light .footer{color:#52647a}
+    body.light .features{background:rgba(226,232,240,.42);border-color:#dce5ee}
+    body.light .feature,body.light .price-card{background:rgba(255,255,255,.94);border-color:#d8e1eb;box-shadow:0 14px 35px rgba(15,23,42,.06)}
+    body.light .feature h3,body.light .price-card h3,body.light .step h3{color:#102033}
+    body.light .price-card .price{color:#102033}
+    body.light .price-card .price small{color:#66788c}
+    body.light .price-features li{color:#33465c}
+    body.light .check{color:#30455b}
+    body.light .dashboard{background:linear-gradient(145deg,#ffffff,#edf4f8);border-color:#d5e0ea;box-shadow:0 18px 45px rgba(15,23,42,.10)}
+    body.light .dash-stat,body.light .dash-list{background:#edf3f7}
+    body.light .dash-row{border-color:#dbe4ec;color:#182b40}
+    body.light .dash-row span,body.light .dash-stat small{color:#61748a}
+    body.light .faq{background:rgba(255,255,255,.96);border-color:#d2dce7;box-shadow:0 5px 18px rgba(15,23,42,.04)}
+    body.light .faq button{color:#102033}
+    body.light .faq p{color:#52647a}
+    body.light .faq button i{color:#e87924}
+    body.light .cta-box{box-shadow:0 18px 45px rgba(15,23,42,.12)}
+    body.light .footer{border-top-color:#d8e1eb}
+    body.light .socials a{color:#52647a}
+    body.light .floating-card{background:rgba(255,255,255,.96);border-color:#d5e0ea;color:#102033;box-shadow:0 15px 35px rgba(15,23,42,.12)}
+    body.light .floating-card small{color:#61748a}
+    body.light .avatar{border-color:#f4f7fb}
+    body.light .toast{background:#102033;color:#fff}
+
     @media(max-width:850px){.nav-links{display:none}.menu-btn{display:block}.nav-actions .btn-ghost{display:none}.hero-grid,.self-service{grid-template-columns:1fr;gap:35px}.hero{text-align:center;padding-top:125px}.hero p{margin-inline:auto}.hero-actions,.trust{justify-content:center}.hero-visual{min-height:475px}.floating-card.one{right:4%}.floating-card.two{left:4%}.feature-grid{grid-template-columns:1fr}.pricing-grid{grid-template-columns:1fr;max-width:480px}.steps{grid-template-columns:1fr;gap:2px}.dashboard{transform:none}.footer-inner{flex-direction:column;text-align:center}}
     @media(max-width:480px){.container{width:min(100% - 28px,1160px)}.nav-inner{height:68px}.brand{font-size:17px}.brand-mark{width:37px;height:37px}.hero h1{font-size:36px}.hero p{font-size:15px}.phone{width:255px}.floating-card{font-size:10px;padding:10px 12px}.floating-card strong{font-size:13px}.floating-card.one{top:65px}.floating-card.two{bottom:58px}.price-card .price{font-size:35px}.cta-box{padding:40px 19px}}
   </style>
